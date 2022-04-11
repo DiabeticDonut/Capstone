@@ -3065,13 +3065,26 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
-  text-align: left;
+  color: white;
+  text-align: center;
   list-style: none;
-  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+}
+
+
+.dropdown.show .dropdown-menu { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
+  max-height: 100px;
+  opacity: 1;
 }
 
 .dropdown-menu-left {
@@ -3229,20 +3242,18 @@ input[type="button"].btn-block {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  padding: 2.5px;
   clear: both;
   font-weight: 400;
-  color: #212529;
-  text-align: inherit;
+  color: white;
+  text-align: center;
   white-space: nowrap;
-  background-color: transparent;
-  border: 0;
+  background-color: #0B5133;
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #16181b;
-  text-decoration: none;
-  background-color: #f8f9fa;
+  color: #e1ce7a;
+  background-color:  #0B5133;
 }
 
 .dropdown-item.active, .dropdown-item:active {
